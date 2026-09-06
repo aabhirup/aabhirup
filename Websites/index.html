@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aabhirup's Portfolio</title>
+  <meta name="description"
+    content="Simple, minimalist, and satisfying portfolio of Aabhirup. Exploring machine learning, deep learning architectures, and high-performance software systems.">
+  <meta name="theme-color" content="#09090b">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+  <!-- ====================================================================
+       MINIMALIST FLOATING NAVIGATION
+       ==================================================================== -->
+  <div class="nav-wrapper">
+    <nav class="nav-pill-bar">
+      <a href="#" class="nav-brand">
+        <span class="nav-brand-dot"></span>
+        <span>Aabhirup</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#work" class="nav-link">1</a></li>
+        <li><a href="#ai" class="nav-link">2</a></li>
+        <li><a href="#stack" class="nav-link">3</a></li>
+        <li><a href="#experience" class="nav-link">4</a></li>
+        <li><a href="#contact" class="nav-link">5</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <!-- Tactile Sound Toggle -->
+        <button id="sound-toggle-btn" class="nav-btn" title="Toggle Tactile Haptics" aria-label="Toggle sound">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+
+        <!-- Theme Toggle (Dark / Light) -->
+        <button id="theme-toggle-btn" class="nav-btn" title="Toggle Light/Dark Theme" aria-label="Toggle theme">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+
+    <!-- ====================================================================
+         CONFIDENT HERO SECTION
+         ==================================================================== -->
+    <header class="hero-section">
+      <div class="hero-status-pill">
+        <span class="pulse-dot"></span>
+        <span>Status: Student of PESU</span>
+      </div>
+
+      <h1 class="hero-title">
+        Aabhirup — smh smh smh
+        <span class="hero-title-highlight">then ill write smh here</span>
+      </h1>
+
+      <p class="hero-description">
+        ill write something here
+      </p>
+
+      <div class="hero-actions">
+        <a href="mailto:aabhirup@quantum-arch.dev" class="btn-primary">
+          <span>Get in touch</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Satisfying Copy Button -->
+        <button id="copy-email-btn" class="btn-secondary copy-btn" title="Copy email to clipboard">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Copy email</span>
+        </button>
+
+        <a href="https://github.com/aabhirup" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         BENTO GRID (WITH SPOTLIGHT GLOW EFFECT)
+         ==================================================================== -->
+    <main class="bento-grid">
+
+      <!-- Card 1: AI / Machine Learning Focus (col-7) -->
+      <article id="ai" class="bento-card col-7">
+        <div class="card-header">
+          <span class="card-tag">Core Focus // 01</span>
+          <span style="font-size: 0.8rem; color: var(--accent-dot);">Active Study</span>
+        </div>
+
+        <h2 class="card-title">AI & Deep Learning Foundations</h2>
+        <p class="card-desc">
+          Actively building and experimenting with neural network architectures. Understanding the mathematical
+          intuition behind backpropagation, loss landscapes, and attention mechanisms to create intelligent systems that
+          amplify human thinking.
+        </p>
+
+        <div class="project-meta-pills">
+          <span class="pill">PyTorch</span>
+          <span class="pill">Transformers</span>
+          <span class="pill">Self-Attention</span>
+          <span class="pill">Vector Embeddings</span>
+          <span class="pill">Multi-Agent Loops</span>
+          <span class="pill">RAG Pipelines</span>
+        </div>
+
+        <div
+          style="margin-top: auto; padding-top: 16px; border-top: 1px solid var(--border); font-size: 0.84rem; color: var(--text-muted);">
+          "Focusing on the first principles of computation, optimization, and scalable inference."
+        </div>
+      </article>
+
+      <!-- Card 2: Interactive AI Sandbox (col-5) -->
+      <article class="bento-card col-5">
+        <div class="card-header">
+          <span class="card-tag">Interactive Sandbox // 02</span>
+        </div>
+
+        <h2 class="card-title" style="font-size: 1.25rem;">Decision Boundary Lab</h2>
+        <p class="card-desc" style="font-size: 0.88rem;">
+          Drag the probe node across the field or adjust the model temperature to watch the probability boundary adapt
+          in real time.
+        </p>
+
+        <div class="playground-container">
+          <div class="playground-canvas-box">
+            <canvas id="ai-canvas"></canvas>
+            <span class="canvas-hint">Drag probe circle</span>
+            <span id="probe-inference-badge" class="canvas-badge">Calculating...</span>
+          </div>
+
+          <div class="playground-controls">
+            <div class="slider-group">
+              <span>Temperature:</span>
+              <input type="range" id="temp-slider" min="0.4" max="2.0" step="0.1" value="1.0">
+              <span id="temp-val" style="font-family: var(--font-mono); font-weight: 600;">1.0</span>
+            </div>
+
+            <button id="regen-btn" class="btn-secondary" style="padding: 4px 12px; font-size: 0.78rem;">
+              <span>Sample Points</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3: Project Synapse-X (col-6) -->
+      <article id="work" class="bento-card col-6">
+        <div class="project-item">
+          <div>
+            <div class="card-header">
+              <span class="card-tag">Flagship System</span>
+              <span class="card-tag">Sub-18ms Latency</span>
+            </div>
+            <h3 class="card-title">SYNAPSE-X // Neural Copilot</h3>
+            <p class="card-desc">
+              Autonomous multi-agent neural assistant that orchestrates distributed LLMs, vector memory caching, and
+              live execution graphs with low-latency delivery.
+            </p>
+            <div class="project-meta-pills">
+              <span class="pill">Rust</span>
+              <span class="pill">WebGPU</span>
+              <span class="pill">Next.js</span>
+              <span class="pill">Vector DB</span>
+            </div>
+          </div>
+
+          <a href="https://github.com/aabhirup" target="_blank" rel="noopener noreferrer" class="project-link">
+            <span>View project schematics</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4: Project Chrono-Sphere (col-6) -->
+      <article class="bento-card col-6">
+        <div class="project-item">
+          <div>
+            <div class="card-header">
+              <span class="card-tag">3D WebGL Graphics</span>
+              <span class="card-tag">60 FPS Locked</span>
+            </div>
+            <h3 class="card-title">CHRONO-SPHERE // 3D Celestial Engine</h3>
+            <p class="card-desc">
+              Real-time 3D celestial visualizer computing N-body gravitational fields and quantum particle simulations
+              natively in browser GLSL fragment shaders.
+            </p>
+            <div class="project-meta-pills">
+              <span class="pill">Three.js</span>
+              <span class="pill">GLSL Shaders</span>
+              <span class="pill">Web Workers</span>
+              <span class="pill">Web Audio</span>
+            </div>
+          </div>
+
+          <a href="https://github.com/aabhirup" target="_blank" rel="noopener noreferrer" class="project-link">
+            <span>Launch visualizer simulation</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 5: Technical Arsenal (col-6) -->
+      <article id="stack" class="bento-card col-6">
+        <div class="card-header">
+          <span class="card-tag">Capabilities</span>
+        </div>
+        <h3 class="card-title">Technical Arsenal</h3>
+        <p class="card-desc">
+          Tools, frameworks, and languages honed across AI experimentation and modern web infrastructure.
+        </p>
+
+        <div class="stack-group">
+          <div>
+            <div class="stack-category-name">AI & Machine Learning</div>
+            <div class="stack-pills-row" style="margin-top: 6px;">
+              <span class="pill">Python</span>
+              <span class="pill">PyTorch</span>
+              <span class="pill">Hugging Face</span>
+              <span class="pill">Vector DBs</span>
+              <span class="pill">LangChain</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="stack-category-name">Frontend & Spatial</div>
+            <div class="stack-pills-row" style="margin-top: 6px;">
+              <span class="pill">TypeScript</span>
+              <span class="pill">React / Next.js</span>
+              <span class="pill">Three.js / WebGL</span>
+              <span class="pill">GLSL</span>
+              <span class="pill">Web Audio</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="stack-category-name">Distributed Backend</div>
+            <div class="stack-pills-row" style="margin-top: 6px;">
+              <span class="pill">Go (Golang)</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Rust</span>
+              <span class="pill">Kafka</span>
+              <span class="pill">Docker</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6: Experience & Milestones (col-6) -->
+      <article id="experience" class="bento-card col-6">
+        <div class="card-header">
+          <span class="card-tag">Career Milestones</span>
+        </div>
+        <h3 class="card-title">Experience & Roles</h3>
+        <p class="card-desc">
+          Highlights from engineering leadership and technical development.
+        </p>
+
+        <div class="timeline-list">
+          <div class="timeline-row">
+            <div>
+              <div class="timeline-role">Principal Systems Architect</div>
+              <div class="timeline-org">Quantum Dynamics Labs</div>
+            </div>
+            <div class="timeline-time">2024 — Present</div>
+          </div>
+
+          <div class="timeline-row">
+            <div>
+              <div class="timeline-role">Lead Full-Stack Engineer</div>
+              <div class="timeline-org">CyberNet Systems</div>
+            </div>
+            <div class="timeline-time">2022 — 2024</div>
+          </div>
+
+          <div class="timeline-row">
+            <div>
+              <div class="timeline-role">3D Web Technologist</div>
+              <div class="timeline-org">Nexus Interactive Studio</div>
+            </div>
+            <div class="timeline-time">2020 — 2022</div>
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- ====================================================================
+         MINIMALIST FOOTER & CONTACT
+         ==================================================================== -->
+    <footer id="contact" class="footer-section">
+      <div class="footer-left">
+        <div class="footer-brand">Aabhirup</div>
+        <div class="footer-copy">Built by yours truly.</div>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:aabhirup@quantum-arch.dev" class="footer-link">Email</a>
+        <a href="https://github.com/aabhirup" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://linkedin.com/in/aabhirup" target="_blank" rel="noopener noreferrer"
+          class="footer-link">LinkedIn</a>
+        <a href="https://x.com/aabhirup_dev" target="_blank" rel="noopener noreferrer" class="footer-link">Twitter /
+          X</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/sound.js"></script>
+  <script src="js/playground.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
