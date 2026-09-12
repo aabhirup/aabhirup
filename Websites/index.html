@@ -69,20 +69,22 @@
     <header class="hero-section">
       <div class="hero-status-pill">
         <span class="pulse-dot"></span>
-        <span>Status: Student of PESU</span>
+        <span>Current: Student of PESU</span>
+        <img src="images/pesu-logo.png" alt="PES University" class="status-pill-logo">
       </div>
 
       <h1 class="hero-title">
-        Aabhirup — smh smh smh
-        <span class="hero-title-highlight">then ill write smh here</span>
+        Aabhirup Samanta
+        <span class="hero-title-highlight">Studying Computer Science AI/ML</span>
       </h1>
 
       <p class="hero-description">
-        ill write something here
+        Tinkering with Computer Vision, Machine Learning, Artificial Intelligence, Neural Networks, Arduinos, Raspberry
+        Pi, ESP32 etc.
       </p>
 
       <div class="hero-actions">
-        <a href="mailto:aabhirup@quantum-arch.dev" class="btn-primary">
+        <a href="mailto:aabhirupsamanta20@gmail.com" class="btn-primary">
           <span>Get in touch</span>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -111,214 +113,658 @@
     </header>
 
     <!-- ====================================================================
-         BENTO GRID (WITH SPOTLIGHT GLOW EFFECT)
+         BENTO GRID (SATISFYING SPOTLIGHT BENTO ARCHITECTURE)
+         Each card has a class like 'col-7', 'col-5', 'col-6', or 'col-12'.
+         You can easily change how big any box is by changing its col-* class!
+         Available sizes: col-4 (1/3), col-5, col-6 (1/2), col-7, col-8 (2/3), col-12 (Full)
          ==================================================================== -->
     <main class="bento-grid">
 
-      <!-- Card 1: AI / Machine Learning Focus (col-7) -->
+      <!-- ================================================================
+           CARD 1: AI & Deep Learning Foundations
+           Size: col-7 (Wide Focus)
+           ================================================================ -->
       <article id="ai" class="bento-card col-7">
-        <div class="card-header">
-          <span class="card-tag">Core Focus // 01</span>
-          <span style="font-size: 0.8rem; color: var(--accent-dot);">Active Study</span>
-        </div>
 
-        <h2 class="card-title">AI & Deep Learning Foundations</h2>
+
+        <h2 class="card-title">About Me</h2>
         <p class="card-desc">
-          Actively building and experimenting with neural network architectures. Understanding the mathematical
-          intuition behind backpropagation, loss landscapes, and attention mechanisms to create intelligent systems that
-          amplify human thinking.
+          I started coding in 4th standard when my dad introduced me to Python, it started with simple stuff like
+          hangman, number guessing game, then a
+          Spanish-to-English translator for my aunt, a dentist in the US who needed it for her patients. That's when I
+          realized that code could actually solve real problems.
         </p>
-
-        <div class="project-meta-pills">
-          <span class="pill">PyTorch</span>
-          <span class="pill">Transformers</span>
-          <span class="pill">Self-Attention</span>
-          <span class="pill">Vector Embeddings</span>
-          <span class="pill">Multi-Agent Loops</span>
-          <span class="pill">RAG Pipelines</span>
-        </div>
-
-        <div
-          style="margin-top: auto; padding-top: 16px; border-top: 1px solid var(--border); font-size: 0.84rem; color: var(--text-muted);">
-          "Focusing on the first principles of computation, optimization, and scalable inference."
-        </div>
+        <p class="card-desc" style="margin-top: 12px;">
+          From there I built WhatsApp and Discord bots using python and various things and then for my Science Quest I
+          built a vertical farming setup with an self made app-controlled lighting, a Raspberry Pi car that spots ripe
+          fruit using computer vision which provides an effecient way of farming without any human aid and a
+          mask-detection
+          barricade where people wearing masks were allowed to enter. An AI documentary somewhere in there
+          sealed the deal, and I've been hooked on ML and AI ever since.
+        </p>
+        <p class="card-desc" style="margin-top: 12px;">
+          Because of my interests, I'm studying CS (AI/ML) at PESU, and I'm usually tinkering on a side project —
+          currently an autonomous self-driving car simulated in Unity. I like ML that doesn't just stay in a notebook —
+          I want to see it move
+          something real.
+        </p>
+        <p class="card-desc" style="margin-top: 12px;">
+          I am also interested in astronomy, badminton, and football.
+        </p>
       </article>
 
-      <!-- Card 2: Interactive AI Sandbox (col-5) -->
-      <article class="bento-card col-5">
-        <div class="card-header">
-          <span class="card-tag">Interactive Sandbox // 02</span>
-        </div>
-
-        <h2 class="card-title" style="font-size: 1.25rem;">Decision Boundary Lab</h2>
-        <p class="card-desc" style="font-size: 0.88rem;">
-          Drag the probe node across the field or adjust the model temperature to watch the probability boundary adapt
-          in real time.
-        </p>
-
-        <div class="playground-container">
-          <div class="playground-canvas-box">
-            <canvas id="ai-canvas"></canvas>
-            <span class="canvas-hint">Drag probe circle</span>
-            <span id="probe-inference-badge" class="canvas-badge">Calculating...</span>
+      <!-- ================================================================
+           CARD 2: Projects Slider
+           Size: col-5 (Interactive Project Slider with Drag & Arrows)
+           ================================================================ -->
+      <article class="bento-card col-5 presentation-card">
+        <!-- Card Header: Title "Projects" & Arrow Controls -->
+        <div class="card-header" style="margin-bottom: 8px; align-items: center;">
+          <div>
+            <span class="card-tag">Showcase // 02</span>
+            <h2 class="card-title" style="margin-bottom: 0;">Projects</h2>
           </div>
-
-          <div class="playground-controls">
-            <div class="slider-group">
-              <span>Temperature:</span>
-              <input type="range" id="temp-slider" min="0.4" max="2.0" step="0.1" value="1.0">
-              <span id="temp-val" style="font-family: var(--font-mono); font-weight: 600;">1.0</span>
-            </div>
-
-            <button id="regen-btn" class="btn-secondary" style="padding: 4px 12px; font-size: 0.78rem;">
-              <span>Sample Points</span>
+          <div class="slider-controls">
+            <span id="slide-indicator" class="slide-counter">01 / 40</span>
+            <button id="slider-prev-btn" class="slider-nav-btn" aria-label="Previous Project" title="Previous Project">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button id="slider-next-btn" class="slider-nav-btn" aria-label="Next Project" title="Next Project">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
             </button>
           </div>
         </div>
-      </article>
 
-      <!-- Card 3: Project Synapse-X (col-6) -->
-      <article id="work" class="bento-card col-6">
-        <div class="project-item">
-          <div>
-            <div class="card-header">
-              <span class="card-tag">Flagship System</span>
-              <span class="card-tag">Sub-18ms Latency</span>
+        <!-- Slider Viewport -->
+        <div class="slider-viewport" id="slider-viewport">
+          <div class="slider-track" id="slider-track">
+
+            <!-- 01: Hangman -->
+            <div class="slide-item active">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">4th Standard · Python</span>
+              </div>
+              <h3 class="slide-title">Hangman</h3>
+              <p class="slide-desc">My very first Python project — a classic word-guessing game in the terminal with lives, ASCII stages, and letter validation.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">CLI Game</span>
+              </div>
             </div>
-            <h3 class="card-title">SYNAPSE-X // Neural Copilot</h3>
-            <p class="card-desc">
-              Autonomous multi-agent neural assistant that orchestrates distributed LLMs, vector memory caching, and
-              live execution graphs with low-latency delivery.
-            </p>
-            <div class="project-meta-pills">
-              <span class="pill">Rust</span>
-              <span class="pill">WebGPU</span>
-              <span class="pill">Next.js</span>
-              <span class="pill">Vector DB</span>
+
+            <!-- 02: Number Guessing Game -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Early Build · Python</span>
+              </div>
+              <h3 class="slide-title">Number Guessing Game</h3>
+              <p class="slide-desc">Python game using random number generation, with higher/lower hints and score tracking.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">Logic</span>
+              </div>
             </div>
+
+            <!-- 03: Spanish Translator -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Real-World · Python</span>
+              </div>
+              <h3 class="slide-title">Spanish ⇄ English Translator</h3>
+              <p class="slide-desc">Built for my aunt (a dentist in the US) to communicate with Spanish-speaking patients — works in both directions.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">Translation API</span>
+              </div>
+            </div>
+
+            <!-- 04: Voice Translator TTS -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Accessibility · Python</span>
+              </div>
+              <h3 class="slide-title">Voice Translator + TTS</h3>
+              <p class="slide-desc">A voice-powered translator with text-to-speech output — speak in one language and hear it back in another.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">Speech Recognition</span><span class="pill">TTS</span>
+              </div>
+            </div>
+
+            <!-- 05: Monument Reader -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Personal Tool · Python</span>
+              </div>
+              <h3 class="slide-title">Monument Reader</h3>
+              <p class="slide-desc">Type a monument's name — it pulls the Wikipedia article and reads it aloud, so you get context while traveling without reading.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">Wikipedia API</span><span class="pill">TTS</span>
+              </div>
+            </div>
+
+            <!-- 06: TTS for Accessibility -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Accessibility · Python</span>
+              </div>
+              <h3 class="slide-title">Text-to-Speech for Accessibility</h3>
+              <p class="slide-desc">Built for people who can't type on a keyboard — converts text input into speech to make communication accessible.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">pyttsx3</span><span class="pill">Accessibility</span>
+              </div>
+            </div>
+
+            <!-- 07: Voice Assistant (Ollama) -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">AI · Python</span>
+              </div>
+              <h3 class="slide-title">AI Voice Assistant (Ollama)</h3>
+              <p class="slide-desc">A local AI voice assistant powered by Ollama — runs an LLM fully offline, listens to your voice, and talks back.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">Ollama</span><span class="pill">LLM</span><span class="pill">Speech</span>
+              </div>
+            </div>
+
+            <!-- 08: Object Recognition Voice Assistant -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">AI/ML · Python</span>
+              </div>
+              <h3 class="slide-title">Object Recognition Voice Assistant</h3>
+              <p class="slide-desc">Points a camera at an object — recognizes it using ML and then narrates information about it using text-to-speech.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">Computer Vision</span><span class="pill">TTS</span>
+              </div>
+            </div>
+
+            <!-- 09: WhatsApp Auto-Wisher -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Automation · Python</span>
+              </div>
+              <h3 class="slide-title">WhatsApp Auto-Wisher</h3>
+              <p class="slide-desc">Automatically sends birthday and occasion wishes to people on WhatsApp — scheduled and personalized using Python.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">Automation</span><span class="pill">WhatsApp</span>
+              </div>
+            </div>
+
+            <!-- 10: WhatsApp Bot -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Bot · Python</span>
+              </div>
+              <h3 class="slide-title">WhatsApp Message Bot</h3>
+              <p class="slide-desc">A bot that automatically sends messages on WhatsApp — an early automation project using Python and scheduling.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">WhatsApp</span><span class="pill">Bot</span>
+              </div>
+            </div>
+
+            <!-- 11: Discord Entertainment Bot -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Discord Bot · Python</span>
+              </div>
+              <h3 class="slide-title">Discord Entertainment Bot</h3>
+              <p class="slide-desc">A full-featured Discord bot for server entertainment — commands, fun responses, and interactive features for communities.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">discord.py</span><span class="pill">Bot</span>
+              </div>
+            </div>
+
+            <!-- 12: Discord Connect 4 Bot -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Discord Bot · AI</span>
+              </div>
+              <h3 class="slide-title">Discord Connect 4 AI</h3>
+              <p class="slide-desc">Play Connect 4 against an AI right inside Discord — built with a minimax algorithm for the AI opponent and emoji-based board rendering.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">discord.py</span><span class="pill">Minimax AI</span>
+              </div>
+            </div>
+
+            <!-- 13: Face Classifier -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">ML · Python</span>
+              </div>
+              <h3 class="slide-title">Face Classifier</h3>
+              <p class="slide-desc">A program that classifies and recognizes various people's faces using machine learning — trained on a custom dataset.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">OpenCV</span><span class="pill">ML</span>
+              </div>
+            </div>
+
+            <!-- 14: Volume Control via Hand Signs -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Gesture · CV</span>
+              </div>
+              <h3 class="slide-title">Hand Sign Volume Control</h3>
+              <p class="slide-desc">Use your fingers to control system volume in real-time — pinch distance between thumb and index finger maps to volume level.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">MediaPipe</span><span class="pill">OpenCV</span>
+              </div>
+            </div>
+
+            <!-- 15: SHA256 Encryption -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Security · Python</span>
+              </div>
+              <h3 class="slide-title">SHA256 Encryption in Python</h3>
+              <p class="slide-desc">Learned and implemented cryptographic hashing with SHA256 in Python — understanding how passwords and data are secured.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">Cryptography</span><span class="pill">SHA256</span>
+              </div>
+            </div>
+
+            <!-- 16: Monero Mining (Raspberry Pi) -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Raspberry Pi · Crypto</span>
+              </div>
+              <h3 class="slide-title">Raspberry Pi Crypto Miner</h3>
+              <p class="slide-desc">Used a Raspberry Pi to mine Monero (XMR) — an experiment in blockchain, proof-of-work, and embedded Linux.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Raspberry Pi</span><span class="pill">Linux</span><span class="pill">Monero</span>
+              </div>
+            </div>
+
+            <!-- 17: Task Manager App -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Mobile App</span>
+              </div>
+              <h3 class="slide-title">Task Manager App</h3>
+              <p class="slide-desc">A mobile app where users can add, edit, and complete tasks — with persistent storage and a clean UI.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">App Development</span><span class="pill">UI/UX</span>
+              </div>
+            </div>
+
+            <!-- 18: News Reader App -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Mobile App</span>
+              </div>
+              <h3 class="slide-title">News Reader App</h3>
+              <p class="slide-desc">An app that fetches and displays current news articles — pulling live data from a news API with category filtering.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">App Dev</span><span class="pill">News API</span>
+              </div>
+            </div>
+
+            <!-- 19: QR Code Scanner App -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Mobile App</span>
+              </div>
+              <h3 class="slide-title">QR Code Scanner App</h3>
+              <p class="slide-desc">Scans QR codes using the phone camera and automatically opens the embedded link — fast, clean, and simple.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">App Dev</span><span class="pill">Camera</span><span class="pill">QR</span>
+              </div>
+            </div>
+
+            <!-- 20: Messaging App -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Mobile App</span>
+              </div>
+              <h3 class="slide-title">Messaging App</h3>
+              <p class="slide-desc">A full messaging app with real-time chat, user authentication, and a clean conversation interface.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">App Dev</span><span class="pill">Real-time</span><span class="pill">Firebase</span>
+              </div>
+            </div>
+
+            <!-- 21: Landmark Info App -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Mobile App · AI</span>
+              </div>
+              <h3 class="slide-title">Landmark Info App</h3>
+              <p class="slide-desc">Type or speak a monument's name — the app fetches and reads out information about it, like a pocket tour guide.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">App Dev</span><span class="pill">Wikipedia API</span><span class="pill">TTS</span>
+              </div>
+            </div>
+
+            <!-- 22: Gesture Recognition (MediaPipe) -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Computer Vision</span>
+              </div>
+              <h3 class="slide-title">Gesture Recognition</h3>
+              <p class="slide-desc">Real-time hand gesture recognition using MediaPipe — tracks hand landmarks and classifies custom gestures to trigger actions.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">MediaPipe</span><span class="pill">OpenCV</span>
+              </div>
+            </div>
+
+            <!-- 23: Smart CCTV -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">AI/ML · Hardware</span>
+              </div>
+              <h3 class="slide-title">Smart CCTV Camera</h3>
+              <p class="slide-desc">A Raspberry Pi-based smart security camera with ML-powered detection — identifies people and motion events in real time.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Raspberry Pi</span><span class="pill">Python</span><span class="pill">ML</span>
+              </div>
+            </div>
+
+            <!-- 24: Smart Lock (Facial Recognition) -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">AI · Hardware</span>
+              </div>
+              <h3 class="slide-title">Facial Recognition Smart Lock</h3>
+              <p class="slide-desc">A smart lock that only unlocks when it recognizes a registered face — built with a camera, motor, and facial recognition ML model.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">Face Recognition</span><span class="pill">Hardware</span>
+              </div>
+            </div>
+
+            <!-- 25: Face Mask Detection -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">AI/ML · Covid Era</span>
+              </div>
+              <h3 class="slide-title">Face Mask Detection</h3>
+              <p class="slide-desc">ML model that detects whether a person in the camera frame is wearing a face mask or not, in real time.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">OpenCV</span><span class="pill">Deep Learning</span>
+              </div>
+            </div>
+
+            <!-- 26: Mask Detection Barricade -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Science Quest · Hardware</span>
+              </div>
+              <h3 class="slide-title">Mask Detection Barricade</h3>
+              <p class="slide-desc">A physical barricade that used computer vision to only let masked people through — built for public spaces during COVID.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">CV</span><span class="pill">Arduino</span>
+              </div>
+            </div>
+
+            <!-- 27: Smart Specs for Visually Impaired -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Accessibility · Hardware</span>
+              </div>
+              <h3 class="slide-title">Smart Specs for Visually Impaired</h3>
+              <p class="slide-desc">Glasses with 6 ultrasonic sensors and 6 vibration motors — each motor vibrates to indicate which direction an obstacle is coming from.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Arduino</span><span class="pill">Ultrasonic Sensors</span><span class="pill">Accessibility</span>
+              </div>
+            </div>
+
+            <!-- 28: Smart Glasses (Bluetooth) -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">IoT · Hardware</span>
+              </div>
+              <h3 class="slide-title">Smart Glasses</h3>
+              <p class="slide-desc">Arduino + Bluetooth module smart glasses that communicate with a paired mobile app — bridging wearable hardware and software.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Arduino</span><span class="pill">Bluetooth</span><span class="pill">App</span>
+              </div>
+            </div>
+
+            <!-- 29: Smart Dustbin -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Arduino · IoT</span>
+              </div>
+              <h3 class="slide-title">Smart Dustbin</h3>
+              <p class="slide-desc">Automatic dustbin lid that opens when a hand is detected nearby using an ultrasonic sensor — no touch needed.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Arduino</span><span class="pill">Ultrasonic</span><span class="pill">Servo Motor</span>
+              </div>
+            </div>
+
+            <!-- 30: IoT Irrigation -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">IoT · Arduino</span>
+              </div>
+              <h3 class="slide-title">IoT Plant Irrigation</h3>
+              <p class="slide-desc">Automatically waters plants based on soil moisture sensor readings — also controllable remotely via Bluetooth and an IoT setup.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Arduino</span><span class="pill">IoT</span><span class="pill">Bluetooth</span>
+              </div>
+            </div>
+
+            <!-- 31: IoT Lights -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Home Automation · IoT</span>
+              </div>
+              <h3 class="slide-title">IoT Smart Lights</h3>
+              <p class="slide-desc">Switch lights on and off remotely using Internet of Things — a basic home automation project with phone control.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Arduino</span><span class="pill">IoT</span><span class="pill">Home Automation</span>
+              </div>
+            </div>
+
+            <!-- 32: Train Crossing -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Arduino · Embedded</span>
+              </div>
+              <h3 class="slide-title">Train Crossing System</h3>
+              <p class="slide-desc">Automated train crossing barrier system using Arduino — detects an incoming train and automatically lowers/raises the crossing gate.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Arduino</span><span class="pill">Sensors</span><span class="pill">Servo</span>
+              </div>
+            </div>
+
+            <!-- 33: Robotic Arm -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Robotics · Hardware</span>
+              </div>
+              <h3 class="slide-title">Robotic Arm</h3>
+              <p class="slide-desc">A multi-servo robotic arm controllable via code or input — designed and built from scratch with precise joint control.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Arduino</span><span class="pill">Servo Motors</span><span class="pill">Robotics</span>
+              </div>
+            </div>
+
+            <!-- 34: Remote Control Car -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Hardware · RC</span>
+              </div>
+              <h3 class="slide-title">Remote Control Car</h3>
+              <p class="slide-desc">Built a custom RC car from scratch — motor control, chassis assembly, and wireless remote pairing using RF modules.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Arduino</span><span class="pill">RF Module</span><span class="pill">Motor Control</span>
+              </div>
+            </div>
+
+            <!-- 35: Vertical Farming -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Science Quest Finalist</span>
+              </div>
+              <h3 class="slide-title">Vertical Farming Rig</h3>
+              <p class="slide-desc">Automated vertical farm with app-controlled LED grow lights and a Raspberry Pi camera + robotic arm for crop ripeness detection.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Raspberry Pi</span><span class="pill">Computer Vision</span><span class="pill">IoT</span>
+              </div>
+            </div>
+
+            <!-- 36: Self-Driving Vehicle (Sensors + Neural Nets) -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">AI/ML · Hardware</span>
+              </div>
+              <h3 class="slide-title">Self-Driving Vehicle (Sensor + CV)</h3>
+              <p class="slide-desc">A self-driving vehicle using cameras, sensors, and neural networks to navigate autonomously — perception, planning, and control.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Python</span><span class="pill">Neural Networks</span><span class="pill">CV</span><span class="pill">Sensors</span>
+              </div>
+            </div>
+
+            <!-- 37: Flappy Bird & Ping Pong -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Games · Arduino + Unity</span>
+              </div>
+              <h3 class="slide-title">Flappy Bird &amp; Ping Pong</h3>
+              <p class="slide-desc">Built Flappy Bird and Ping Pong — one using Arduino with a physical display, and one built in Unity as a digital game.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Arduino</span><span class="pill">Unity</span><span class="pill">Game Dev</span>
+              </div>
+            </div>
+
+            <!-- 38: Multiplayer FPS (Unreal Engine) -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Game Dev · Unreal Engine</span>
+              </div>
+              <h3 class="slide-title">Multiplayer FPS Game</h3>
+              <p class="slide-desc">A multiplayer first-person shooter built in Unreal Engine — networking, player sync, weapons, and level design.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Unreal Engine</span><span class="pill">Multiplayer</span><span class="pill">FPS</span>
+              </div>
+            </div>
+
+            <!-- 39: Racing Game (Unity) -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completed"><span class="status-dot"></span><span>Completed</span></span>
+                <span class="slide-date">Game Dev · Unity</span>
+              </div>
+              <h3 class="slide-title">Racing Game</h3>
+              <p class="slide-desc">A racing game built in Unity — physics-based car handling, track design, lap timing, and AI competitor cars.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Unity</span><span class="pill">C#</span><span class="pill">Physics</span><span class="pill">Game Dev</span>
+              </div>
+            </div>
+
+            <!-- 40: Self-Driving Car (Unity + ML, Completing) -->
+            <div class="slide-item">
+              <div class="slide-status-row">
+                <span class="status-badge completing"><span class="status-dot"></span><span>Completing</span></span>
+                <span class="slide-date">Current Project</span>
+              </div>
+              <h3 class="slide-title">Self-Driving Car (Lane Detection + ML)</h3>
+              <p class="slide-desc">Self-driving car software with lane detection tested through Unity simulation — uses machine learning, AI, and neural networks.</p>
+              <div class="project-meta-pills" style="margin-top: auto; padding-top: 10px;">
+                <span class="pill">Unity</span><span class="pill">Machine Learning</span><span class="pill">Lane Detection</span><span class="pill">Neural Nets</span>
+              </div>
+            </div>
+
           </div>
-
-          <a href="https://github.com/aabhirup" target="_blank" rel="noopener noreferrer" class="project-link">
-            <span>View project schematics</span>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="7" y1="17" x2="17" y2="7"></line>
-              <polyline points="7 7 17 7 17 17"></polyline>
-            </svg>
-          </a>
         </div>
       </article>
 
-      <!-- Card 4: Project Chrono-Sphere (col-6) -->
-      <article class="bento-card col-6">
-        <div class="project-item">
-          <div>
-            <div class="card-header">
-              <span class="card-tag">3D WebGL Graphics</span>
-              <span class="card-tag">60 FPS Locked</span>
-            </div>
-            <h3 class="card-title">CHRONO-SPHERE // 3D Celestial Engine</h3>
-            <p class="card-desc">
-              Real-time 3D celestial visualizer computing N-body gravitational fields and quantum particle simulations
-              natively in browser GLSL fragment shaders.
-            </p>
-            <div class="project-meta-pills">
-              <span class="pill">Three.js</span>
-              <span class="pill">GLSL Shaders</span>
-              <span class="pill">Web Workers</span>
-              <span class="pill">Web Audio</span>
-            </div>
+      <!-- ================================================================
+           CARD 3: Languages & Technologies
+           Size: col-8
+           ================================================================ -->
+      <article class="bento-card col-8 lang-card">
+        <span class="card-tag">Skills // 03</span>
+        <h2 class="card-title" style="margin-bottom: 18px;">Languages &amp; Tech</h2>
+
+        <div class="lang-grid">
+
+          <div class="lang-item">
+            <span class="lang-dot" style="background:#3572A5;box-shadow:0 0 8px #3572A5;"></span>
+            <span class="lang-name">Python</span>
+            <span class="lang-level">Advanced</span>
           </div>
 
-          <a href="https://github.com/aabhirup" target="_blank" rel="noopener noreferrer" class="project-link">
-            <span>Launch visualizer simulation</span>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="7" y1="17" x2="17" y2="7"></line>
-              <polyline points="7 7 17 7 17 17"></polyline>
-            </svg>
-          </a>
-        </div>
-      </article>
-
-      <!-- Card 5: Technical Arsenal (col-6) -->
-      <article id="stack" class="bento-card col-6">
-        <div class="card-header">
-          <span class="card-tag">Capabilities</span>
-        </div>
-        <h3 class="card-title">Technical Arsenal</h3>
-        <p class="card-desc">
-          Tools, frameworks, and languages honed across AI experimentation and modern web infrastructure.
-        </p>
-
-        <div class="stack-group">
-          <div>
-            <div class="stack-category-name">AI & Machine Learning</div>
-            <div class="stack-pills-row" style="margin-top: 6px;">
-              <span class="pill">Python</span>
-              <span class="pill">PyTorch</span>
-              <span class="pill">Hugging Face</span>
-              <span class="pill">Vector DBs</span>
-              <span class="pill">LangChain</span>
-            </div>
+          <div class="lang-item">
+            <span class="lang-dot" style="background:#f7df1e;box-shadow:0 0 8px #f7df1e88;"></span>
+            <span class="lang-name">JavaScript</span>
+            <span class="lang-level">Intermediate</span>
           </div>
 
-          <div>
-            <div class="stack-category-name">Frontend & Spatial</div>
-            <div class="stack-pills-row" style="margin-top: 6px;">
-              <span class="pill">TypeScript</span>
-              <span class="pill">React / Next.js</span>
-              <span class="pill">Three.js / WebGL</span>
-              <span class="pill">GLSL</span>
-              <span class="pill">Web Audio</span>
-            </div>
+          <div class="lang-item">
+            <span class="lang-dot" style="background:#e34c26;box-shadow:0 0 8px #e34c2688;"></span>
+            <span class="lang-name">HTML &amp; CSS</span>
+            <span class="lang-level">Intermediate</span>
           </div>
 
-          <div>
-            <div class="stack-category-name">Distributed Backend</div>
-            <div class="stack-pills-row" style="margin-top: 6px;">
-              <span class="pill">Go (Golang)</span>
-              <span class="pill">Node.js</span>
-              <span class="pill">Rust</span>
-              <span class="pill">Kafka</span>
-              <span class="pill">Docker</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Card 6: Experience & Milestones (col-6) -->
-      <article id="experience" class="bento-card col-6">
-        <div class="card-header">
-          <span class="card-tag">Career Milestones</span>
-        </div>
-        <h3 class="card-title">Experience & Roles</h3>
-        <p class="card-desc">
-          Highlights from engineering leadership and technical development.
-        </p>
-
-        <div class="timeline-list">
-          <div class="timeline-row">
-            <div>
-              <div class="timeline-role">Principal Systems Architect</div>
-              <div class="timeline-org">Quantum Dynamics Labs</div>
-            </div>
-            <div class="timeline-time">2024 — Present</div>
+          <div class="lang-item">
+            <span class="lang-dot" style="background:#A97BFF;box-shadow:0 0 8px #A97BFF88;"></span>
+            <span class="lang-name">C / C++</span>
+            <span class="lang-level">Intermediate</span>
           </div>
 
-          <div class="timeline-row">
-            <div>
-              <div class="timeline-role">Lead Full-Stack Engineer</div>
-              <div class="timeline-org">CyberNet Systems</div>
-            </div>
-            <div class="timeline-time">2022 — 2024</div>
+          <div class="lang-item">
+            <span class="lang-dot" style="background:#178600;box-shadow:0 0 8px #17860088;"></span>
+            <span class="lang-name">C# (Unity)</span>
+            <span class="lang-level">Intermediate</span>
           </div>
 
-          <div class="timeline-row">
-            <div>
-              <div class="timeline-role">3D Web Technologist</div>
-              <div class="timeline-org">Nexus Interactive Studio</div>
-            </div>
-            <div class="timeline-time">2020 — 2022</div>
+          <div class="lang-item">
+            <span class="lang-dot" style="background:#f05032;box-shadow:0 0 8px #f0503288;"></span>
+            <span class="lang-name">Git &amp; GitHub</span>
+            <span class="lang-level">Comfortable</span>
           </div>
+
+          <div class="lang-item">
+            <span class="lang-dot" style="background:#00aff0;box-shadow:0 0 8px #00aff088;"></span>
+            <span class="lang-name">Arduino (C)</span>
+            <span class="lang-level">Advanced</span>
+          </div>
+
+          <div class="lang-item">
+            <span class="lang-dot" style="background:#ff6b35;box-shadow:0 0 8px #ff6b3588;"></span>
+            <span class="lang-name">Linux / Bash</span>
+            <span class="lang-level">Comfortable</span>
+          </div>
+
         </div>
       </article>
 
@@ -334,7 +780,7 @@
       </div>
 
       <div class="footer-links">
-        <a href="mailto:aabhirup@quantum-arch.dev" class="footer-link">Email</a>
+        <a href="mailto:aabhirupsamanta20@gmail.com" class="footer-link">Email</a>
         <a href="https://github.com/aabhirup" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
         <a href="https://linkedin.com/in/aabhirup" target="_blank" rel="noopener noreferrer"
           class="footer-link">LinkedIn</a>
@@ -347,6 +793,7 @@
 
   <!-- Scripts -->
   <script src="js/sound.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/playground.js"></script>
   <script src="js/main.js"></script>
 </body>

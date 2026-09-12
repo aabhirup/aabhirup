@@ -15,9 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
    Mouse-Tracking Spotlight Border Glow (Linear / Vercel Style)
    -------------------------------------------------------------------------- */
 function initSpotlightEffect() {
-  const cards = document.querySelectorAll('.bento-card');
+  if (window._spotlightInitialized) return;
+  window._spotlightInitialized = true;
 
   window.addEventListener('mousemove', (e) => {
+    const cards = document.querySelectorAll('.bento-card');
     cards.forEach((card) => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
@@ -28,6 +30,7 @@ function initSpotlightEffect() {
     });
   });
 }
+window.initSpotlightEffect = initSpotlightEffect;
 
 /* --------------------------------------------------------------------------
    Satisfying Copy-to-Clipboard Button
